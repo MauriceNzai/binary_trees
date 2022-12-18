@@ -1,7 +1,7 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_level_order - traverses a binary tree in level-order traversal
+ * binary_tree_levelorder - traverses a binary tree in level-order traversal
  *
  * @tree: pointer to the root node of the binary tree to traverse
  * @func: the func to use
@@ -14,12 +14,12 @@ void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 
 	int h;
 	int i;
-       
+
 	h = binary_tree_height(tree);
-	
+
 	if (!tree || !func)
 		return;
-	
+
 	for (i = 1; i <= h; i++)
 	{
 		print_current_level(tree, i);
