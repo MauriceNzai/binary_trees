@@ -79,6 +79,10 @@ void print_level_order(const binary_tree_t *tree);
 int max_value(const binary_tree_t *tree);
 int min_value(const binary_tree_t *tree);
 int is_tree_bst(const binary_tree_t *tree, int min, int max);
+bst_t *inorder_successor(bst_t *root);
+bst_t *delete_node(bst_t *root, bst_t *node);
+bst_t *remove_node(bst_t *root, bst_t *node, int value);
+
 
 
 
