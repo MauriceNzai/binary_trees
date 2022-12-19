@@ -39,7 +39,7 @@ bst_t *remove_node(bst_t *root, bst_t *node, int value)
  * delete_node - deletes a node from a BST
  *
  * @root: pointer to the root node of the BST to remove node from
- * node: pointer to the node to delete
+ * @node: pointer to the node to delete
  *
  * Return: pointer to the new root node after deletion
  */
